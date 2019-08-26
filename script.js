@@ -15,7 +15,7 @@ var audio2=new Audio('getintouch.wav');
 hamburger.addEventListener("click",openFullMenu);
 
 getInTouch.addEventListener("click",getIntouch);
-getInTouch.addEventListener("mouseover",getIntouch);
+getInTouch.addEventListener("mouseover",getIntouchMO);
 
 document.querySelector(".full-menu-context-main ul").addEventListener("click",closeMenu);
 
@@ -39,12 +39,16 @@ function openFullMenu(){
 function closeMenu(){
   hamburger.classList.toggle("open");
   fullMenu.classList.toggle("full-menu-open");
-  audio1.play();
+  document.querySelector(".navbar").classList.toggle("nav-trans");
 }
 
 function getIntouch(){
-    console.log("GET");
-    audio2.play();
+    audio1.play();
+    closeMenu();
+}
+
+function getIntouchMO(){
+  audio2.play();
 }
 
 function socialPop(){

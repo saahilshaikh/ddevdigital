@@ -9,6 +9,8 @@
 }
 
 body{
+    margin: 0;
+    padding: 0;
     overflow: hidden;
 }
 
@@ -639,6 +641,7 @@ a{
 
 .section-2{
     width: 100%;
+    height: 100vh;
     background-color: #fff;
     background-image: url(2.png);
     background-attachment: fixed;
@@ -660,7 +663,7 @@ a{
 }
 
 .section-2 .context{
-    width:60%;
+    width:100%;
     display: flex;
     flex-direction: row;
 }
@@ -741,7 +744,104 @@ a{
     font-family: 'Montserrat', sans-serif;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1200px){
+    .section-2{
+        width: 100%;
+        height: 100%;
+    }
+    .section-2 .head{
+        width: 80%;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .section-2 .context{
+        width:90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    
+    .section-2 .context-img img{
+        width: 400px;
+    }
+
+    .section-2 .context .context-items{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    }
+    
+    .section-2 .context .context-items h3{
+        font-size: 30px;
+        color: #3330a3;
+        font-weight: 100;
+        font-family: 'Montserrat', sans-serif;
+        margin: 30px;
+    }
+    
+    .section-2 .context .context-items h1{
+        font-size: 16px;
+        color: #3330a3;
+        font-weight: 100;
+        font-family: 'Montserrat', sans-serif;
+        margin:10px 0;
+        text-align: center;
+    }
+    
+    .section-2 .context .context-items h1 a{
+        color: #e17600;
+    }
+    
+    .section-2 .context .context-items h1 a:hover{
+        color: #3330a3;
+    }
+    
+    .section-2 .context .context-items .context-main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .section-2 .context .context-items .context-main .context-main-items{
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+    }
+    
+    .section-2 .context .context-items .context-main .context-main-items h2{
+        font-size: 20px;
+        color: #e17600;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .section-2 .context .context-items .context-main .context-main-items h1{
+        font-size: 16px;
+        color: #3330a3;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .section-2 .context .context-items .context-main .context-main-items h1 div{
+        width: 30px;
+        height: 2px;
+        background-color: #3330a3;
+        margin: 0 10px;
+    }
+    
+    .section-2 .context .context-items .context-main .context-main-items p{
+        font-size: 14px;
+        color: #000;
+        margin: 15px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+@media screen and (max-width:600px){
     .section-2{
         width: 100%;
     }
