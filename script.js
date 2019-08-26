@@ -40,6 +40,7 @@ function closeMenu(){
   hamburger.classList.toggle("open");
   fullMenu.classList.toggle("full-menu-open");
   document.querySelector(".navbar").classList.toggle("nav-trans");
+  audio1.play();
 }
 
 function getIntouch(){
