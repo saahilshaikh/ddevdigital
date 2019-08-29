@@ -1189,7 +1189,7 @@ a{
 
 .section-2 .context .context-items h3{
     font-size: 30px;
-    color: #6f6bd6;
+    color: #e17600;
     font-weight: 100;
     font-family: 'Montserrat', sans-serif;
     margin: 15px 0;
@@ -1224,8 +1224,8 @@ a{
     padding: 15px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    -webkit-box-shadow: 13px 9px 13px -13px rgba(0,0,0,0.75);
-    -moz-box-shadow: 13px 9px 13px -13px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 15px 10px 15px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 15px 10px 15px -15px rgba(0,0,0,0.75);
     box-shadow: 15px 10px 15px -15px rgba(0,0,0,0.75);
     margin: 10px 0;
     background-color: #fff;
@@ -1289,7 +1289,7 @@ a{
     }
     
     .section-2 .context img{
-        width: 300px;
+        width: 200px;
         margin: 0;
     }
 
@@ -1434,165 +1434,352 @@ a{
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(193, 210, 255));
-}
-.section-3 .section-3-context{
-    width: 60%;
-    display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    padding-bottom:100px;
+    justify-content: space-evenly;
+    position: relative;
 }
 
-.section-3 .section-3-context .context-items{
+.section-3-container{
+    height: 60%;
+    width: 100%;
+    margin: auto 0;
+    background-color:#3330a3;
+    position: absolute;
+    z-index: 1;
+}
+
+.section-3-img{
+    height: 90vh;
+    z-index: 2;
+}
+
+.section-3-context{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height:60%;
+    margin: auto 0;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.section-3-head{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-3-head h5{
+    color: #e17600;
+    font-size: 20px;
+    margin: 50px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-3-head h1{
+    color: #3330a3;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-3-head p{
+    color: #3330a3;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-3-context-main{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+}
+
+.section-3-context-main-item{
+    width: 150px;
+    margin: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: center;
 }
 
-.section-3 .section-3-context .context-items p{
+.section-3-context-main-item img{
+    width: 40px;
+}
+.section-3-context-main-item h2{
+    font-size: 18px;
+    color: #565e6d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width:1600px){
+.section-3-head h1{
+    font-size: 40px;
+}
+}
+
+@media screen and (max-width:1200px){
+.section-3{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.section-3-container{
+    bottom: 0;
+}
+
+.section-3-img{
+    height: 80vh;
+    clip-path: inset(0,0,0,50px);
+    -webkit-clip-path: inset(0 0 40% 0);
+    position: absolute;
+    top:0;
+    z-index: 3;
+    margin: auto;
+}
+
+.section-3-context{
+    position: absolute;
+    bottom: 0;
+    width: 500px;
+    height: 40%;
+    -webkit-box-shadow: -1px -6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px -6px 5px 0px rgba(0,0,0,0.75);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.section-3-head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.section-3-head h5{
+    font-size: 20px;
+    margin:20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-3-head h1{
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
-    color: #3330a3;
-    margin: 0 50px;
 }
 
-.section-3 .section-3-context .context-items p1{
-    font-size: 25px;
+.section-3-head p{
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    color: #e17600;
-    text-align: left;
-    margin:20px 0;
 }
 
-.section-3 .section-3-context .context-items p2{
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    color: #928fde;
-    text-align: left;
-    margin:20px 0;
-}
-
-.section-3 .section-3-context .context-items .context-main{
+.section-3-context-main{
     display: grid;
-    grid-template-columns: auto auto;
     width: 100%;
+    grid-template-columns: 150px 150px 150px;
+    margin: auto;
 }
 
-.section-3 .section-3-context .context-items .context-main p{
-    font-size: 16px;
-    color: #3330a3;
+.section-3-context-main-item{
+    width: 150px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3-context-main-item img{
+    width: 40px;
+}
+.section-3-context-main-item h2{
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    margin: 10px;
+}
 }
 
-.section-3 .section-3-context .context-items .context-main p i{
-    font-size: 16px;
-    margin-right: 5px;
-    color: #80BAED;
-}
-
-.section-3 .section-3-context .context-img{
-    width: 60%;
-}
-
-svg{
-    width: 350px;
-    align-self: center;
-    justify-self: center;
-    margin-left: 200px;
-}
-
-#part{
-    opacity: 0;
-    animation-duration:1.2s;
-    animation-name: animate;
-    animation-iteration-count:infinite;
-    animation-direction: alternate;
-}
-
-@keyframes animate{
-    from {
-        transform: translate(0,0);
-        opacity: 0;
-    }
-    to{
-        transform: translate(60px,-50px);
-        opacity: 1;
-    }
-}
-
-
-.st0{fill:#486885;}
-.st1{fill:#EDEDED;}
-.st2{fill:#80BAED;}
-.st3{fill:#567C9E;}
-.st4{fill:#9E9E9E;}
-
-
-@media screen and (max-width:768px){
-    .section-3 .section-3-context{
-        width: 90%;
-        flex-direction: column;
-    }
-    
-    .section-3 .section-3-context .context-items{
+@media screen and (max-width:600px){
+    .section-3{
+        width: 100%;
+        height: 80vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: space-evenly;
+        position: relative;
     }
     
-    .section-3 .section-3-context .context-items p{
+    .section-3-container{
+        bottom: 0;
+    }
+    
+    .section-3-img{
+        height: 80vh;
+        clip-path: inset(0,0,0,50px);
+        -webkit-clip-path: inset(0 0 50% 0);
+        position: absolute;
+        top:0;
+        z-index: 3;
+        margin: auto;
+    }
+    
+    .section-3-context{
+        position: absolute;
+        bottom: 0;
+        width: 90%;
+        height: 50%;
+        -webkit-box-shadow: -1px -6px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px -6px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: -1px -6px 5px 0px rgba(0,0,0,0.75);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .section-3-head{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+    
+    .section-3-head h5{
+        font-size: 18px;
+        margin:0px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .section-3-head h1{
         font-size: 25px;
-        margin-top:50px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .section-3-head p{
+        width: 80%;
         text-align: center;
-    }
-    
-    .section-3 .section-3-context .context-items p1{
-        font-size: 16px;
-        text-align: center;
-        margin:20px 0;
-    }
-    
-    .section-3 .section-3-context .context-items p2{
-        font-size: 15px;
-        text-align: center;
-        margin:20px 0;
-    }
-    
-    .section-3 .section-3-context .context-items .context-main{
-        width: 90%;
-    }
-    
-    .section-3 .section-3-context .context-items .context-main p{
         font-size: 14px;
-        text-align: left;
+        font-family: 'Montserrat', sans-serif;
     }
     
-    .section-3 .section-3-context .context-items .context-main p i{
-        font-size: 12px;
+    .section-3-context-main{
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto auto;
+        margin: 0;
     }
     
-    .section-3 .section-3-context .context-img{
-        width: 90%;
+    .section-3-context-main-item{
+        width: 80px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     
-    svg{
-        width: 200px;
-        margin:0;
+    .section-3-context-main-item img{
+        width: 30px;
     }
-}
+    .section-3-context-main-item h2{
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    }
 
+    @media screen and (max-width:360px){
+        .section-3{
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            position: relative;
+        }
+        
+        .section-3-container{
+            height: 70%;
+            bottom: 0;
+        }
+        
+        .section-3-img{
+            height: 80vh;
+            clip-path: inset(0 0 60% 0);
+            -webkit-clip-path: inset(0 0 60% 0);
+            position: absolute;
+            top:0;
+            z-index: 3;
+            margin: auto;
+        }
+        
+        .section-3-context{
+            position: absolute;
+            bottom: 0;
+            width: 90%;
+            height: 60%;
+            -webkit-box-shadow: -1px -6px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: -1px -6px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: -1px -6px 5px 0px rgba(0,0,0,0.75);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        .section-3-head{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .section-3-head h5{
+            font-size: 18px;
+            margin:0px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .section-3-head h1{
+            font-size: 25px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .section-3-head p{
+            width: 80%;
+            text-align: center;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .section-3-context-main{
+            display: grid;
+            width: 90%;
+            grid-template-columns: auto auto auto;
+            margin: auto;
+        }
+        
+        .section-3-context-main-item{
+            width: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .section-3-context-main-item img{
+            width: 30px;
+        }
+        .section-3-context-main-item h2{
+            font-size: 12px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        }
 /** SECTION-4 **/
 
 
@@ -1719,50 +1906,63 @@ svg{
 
 .section-5{
     width: 100%;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3330a3;
-    background-image: url(circuit-board.svg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
+    background:linear-gradient(to top,#c07eed,#7053d1);
+    position: relative;
 }
 
+
 .section-5 .section-5-context{
-    margin: 50px 0;
     width: 70%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.section-5 .section-5-context h1{
-    font-size: 40px;
-    color: #fff;
+
+.section-5 .section-5-context h2{
+    font-size: 25px;
+    color: #e17600;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom:50px;
 }
 
+.section-5 .section-5-context h1{
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom:20px; 
+}
+.section-5 .section-5-context h4{
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    margin-bottom:10px; 
+}
 .section-5 .section-5-context h5{
     font-size: 15px;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
     font-weight: 100;
 }
 
 .section-5 .section-5-context .context-main{
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .section-5 .section-5-context .context-main .context-main-items{
-    width: 300px;
+    width: 200px;
     height: 300px;
     background-color: #fff;
     border-radius: 10px;
@@ -1771,11 +1971,40 @@ svg{
     justify-content: center;
     align-items: center;
     margin: 30px;
+    position: absolute;
+    -webkit-box-shadow: 13px 12px 11px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 12px 11px -8px rgba(0,0,0,0.75);
+    box-shadow: 13px 12px 11px -8px rgba(0,0,0,0.75);
+}
+
+.section-5 .section-5-context .context-main .context-main-items:nth-child(1)
+{
+    top: -550px;
+    left: 0;
+}
+.section-5 .section-5-context .context-main .context-main-items:nth-child(2){
+    top: -490px;
+    left: 250px;
+}
+.section-5 .section-5-context .context-main .context-main-items:nth-child(3){
+    top: -200px;
+    left: 0;
+}
+.section-5 .section-5-context .context-main .context-main-items:nth-child(4){
+    top: -140px;
+    left: 250px;
+}
+.section-5 .section-5-context .context-main .context-main-items:nth-child(5){
+    top: 150px;
+    left: 0;
+}
+.section-5 .section-5-context .context-main .context-main-items:nth-child(6){
+    top: 200px;
+    left: 250px;
 }
 
 .section-5 .section-5-context .context-main .context-main-items img{
     width: 80px;
-    margin: 20px;
 }
 
 .section-5 .section-5-context .context-main .context-main-items h2{
