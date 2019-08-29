@@ -33,6 +33,8 @@ function openFullMenu(){
     hamburger.classList.toggle("open");
     fullMenu.classList.toggle("full-menu-open");
     document.querySelector(".navbar").classList.toggle("nav-trans");
+    document.querySelector(".main-menu").classList.toggle("disable-main-menu");
+    document.querySelector(".company-logo").classList.toggle("disable-company-logo");
     audio1.play();
 }
 
@@ -40,6 +42,8 @@ function closeMenu(){
   hamburger.classList.toggle("open");
   fullMenu.classList.toggle("full-menu-open");
   document.querySelector(".navbar").classList.toggle("nav-trans");
+  document.querySelector(".main-menu").classList.toggle("disable-main-menu");
+  document.querySelector(".company-logo").classList.toggle("disable-company-logo");
   audio1.play();
 }
 

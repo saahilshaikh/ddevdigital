@@ -41,13 +41,13 @@ a{
 .navbar{
     width: 100vw;
     height: 70px;
-    background-color:#3330a3;
     position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 100;
+    background-color: #fff;
 }
 .navigation{
-    width: 60%;
+    width: 70%;
     height: 100%;
     margin: auto;
     display: flex;
@@ -70,9 +70,9 @@ a{
 }
 .navigation ul li a{
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    margin: 4.8px 16px;
-    color: #fff;
+    font-size: 14px;
+    margin: 5px 16px;
+    color: #3330a3;
     position: relative;
     cursor: pointer;
 }
@@ -116,7 +116,7 @@ a{
 .hamburger .line2,
 .hamburger .line3{
     height: 2px;
-    background-color: #fff;
+    background-color: #3330a3;
     margin: 5px;
 }
 
@@ -148,6 +148,7 @@ a{
     transform: rotate(45deg);
     width: 18px;
     transition:transform 500ms ease-out;
+    background-color: #fff;
 }
 .open .line2{
     display: none;
@@ -156,10 +157,17 @@ a{
     width: 18px;
     transform: rotate(-45deg) translate(5px,-5px);
     transition: transform 500ms ease-out;
+    background-color: #fff;
 }
 
 .nav-trans{
     background-color: transparent;
+}
+.disable-company-logo{
+    visibility: hidden;
+}
+.disable-main-menu{
+    visibility: hidden;
 }
 .full-menu{
     position: fixed;
@@ -172,7 +180,7 @@ a{
     background-size: 300px;
     transition: all 500ms ease-out;
     overflow: hidden;
-    z-index: 9;
+    z-index: 99;
 }
 .full-menu-open{
     height: 100vh;
@@ -391,9 +399,198 @@ a{
     height: 100vh;
     overflow: hidden;
     background-color: #fff;
-    background-image: url(bg.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    position: relative;
+}
+
+.svg1{
+    width: 400px;
+    position: absolute;
+    bottom: 200px;
+    left: 200px;
+    z-index: 5;
+    animation-name: rocket;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes rocket{
+    from{
+        bottom: 10px;
+    left: 10px;
+    }
+    to{
+        bottom: 120px;
+    left: 170px;
+    }
+}
+
+
+.svg2{
+    width: 600px;
+    position: absolute;
+    bottom: -122px;
+    left: -110px;
+    z-index: 6;
+    animation-name: cloud1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes cloud1{
+    from{
+        bottom: -122px;
+    left: -110px;
+    }
+    to{
+        bottom: -130px;
+    left: -120px;
+    }
+}
+
+.svg3{
+    width: 600px;
+    position: absolute;
+    bottom: -120px;
+    left: -85px;
+    z-index: 5;
+    animation-name: cloud2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes cloud2{
+    from{
+        bottom: -120px;
+    left: -85px;
+    }
+    to{
+        bottom: -150px;
+    left: -100px;
+    }
+}
+
+.svg4{
+    width: 800px;
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    z-index: 4;
+    animation-name: cloud3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes cloud3{
+    from{
+        bottom: -100px;
+    left: -100px;
+    }
+    to{
+        bottom: -120px;
+    left: -120px;
+    }
+}
+
+.svg5{
+    width: 400px;
+    position: absolute;
+    bottom: -160px;
+    left: -75px;
+    z-index: 4;
+    animation-name: boost;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes boost{
+    from{
+        bottom: -100px;
+    left: -70px;
+    transform: scale(0.6);
+    transition: 1s ease-in;
+    }
+    to{
+        bottom: -170px;
+    left: -80px;
+    transform: scale(1);
+    transition: 1s ease-in;
+    }
+}
+
+.svg6{
+    width: 900px;
+    position: absolute;
+    bottom: -122px;
+    left: -122px;
+    z-index: 3;
+    animation-name: cloud4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes cloud4{
+    from{
+        bottom: -122px;
+    left: -122px;
+    }
+    to{
+        bottom: -150px;
+    left: -150px;
+    }
+}
+
+.db1{
+    width: 20px;
+    position: absolute;
+    bottom: 300px;
+    left: 20px;
+    z-index: 7;
+}
+
+.db2{
+    width: 10px;
+    position: absolute;
+    bottom: 200px;
+    left: 40px;
+    z-index: 7;
+}
+
+.db3{
+    width: 20px;
+    position: absolute;
+    bottom: 100px;
+    left: 60px;
+    z-index: 7;
+}
+
+.db6{
+    width: 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 400px;
+    z-index: 7;
+}
+
+.db7{
+    width: 10px;
+    position: absolute;
+    bottom: 50px;
+    left: 500px;
+    z-index: 7;
+}
+
+.db8{
+    width: 12px;
+    position: absolute;
+    bottom: 25px;
+    left: 600px;
+    z-index: 7;
 }
 
 .banner{
@@ -420,13 +617,23 @@ a{
 
 
 .banner-content{
-    width: 50%;
+    width: 60%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.bannerbg{
+    position: absolute;
+    width: 400px;
+    top: 200px;
+    transform: rotate(-15deg);
+    z-index: -1;
 }
 
 .banner-content h5{
@@ -436,6 +643,7 @@ a{
     background-color: #e17600;
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
+    z-index: 1;
     
 }
 .txt-type {
@@ -445,6 +653,7 @@ a{
     margin: 15px 0;
     border-right: 0.2rem solid #e17600; 
     font-family: 'Montserrat', sans-serif;
+    z-index: 1;
 }
 
 .banner-content p{
@@ -452,6 +661,7 @@ a{
     color: #164377;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
+    z-index: 1;
 }
 
 .banner-content a{
@@ -468,11 +678,7 @@ a{
     font-weight:900;
     border-radius: 5px;
     position: relative;
-    z-index: 0;
-}
-
-.banner-content a:hover{
-        color: #fff;
+    z-index: 9;
 }
 
 .banner-content a::before{
@@ -500,6 +706,7 @@ a{
 }
 
 .know-more-content{
+    z-index: 7;
     width: 200px;
     display: flex;
     flex-direction: column;
@@ -509,7 +716,7 @@ a{
 
 .know-more-content a{
     font-size: 18px;
-    color: #fff;
+    color: #0d2136;
     font-family: 'Montserrat', sans-serif;
     transition:font-size 500ms ease-out;
 }
@@ -541,6 +748,57 @@ a{
         background-position: left;
     }
 
+    .svg1{
+        width: 300px;
+        position: absolute;
+        bottom: 200px;
+        left: 200px;
+        z-index: 5;
+        animation-name: rocket;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes rocket{
+        from{
+            bottom: 10px;
+        left: 10px;
+        }
+        to{
+            bottom: 100px;
+        left: 170px;
+        }
+    }
+    
+
+    .svg5{
+        width: 350px;
+        position: absolute;
+        bottom: -160px;
+        left: -75px;
+        z-index: 4;
+        animation-name: boost;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes boost{
+        from{
+            bottom: -100px;
+        left: -80px;
+        transform: scale(0.5);
+        transition: 1s ease-in;
+        }
+        to{
+            bottom: -170px;
+        left: -70px;
+        transform: scale(1);
+        transition: 1s ease-in;
+        }
+    }
+
     .banner-content h5{
         font-size: 20px;
     }
@@ -567,6 +825,58 @@ a{
         background-size: contain;
         background-position: bottom;
     }
+
+    .svg1{
+        width: 200px;
+        position: absolute;
+        bottom: 200px;
+        left: 200px;
+        z-index: 5;
+        animation-name: rocket;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes rocket{
+        from{
+            bottom: 10px;
+        left: 10px;
+        }
+        to{
+            bottom: 100px;
+        left: 170px;
+        }
+    }
+    
+
+    .svg5{
+        width: 200px;
+        position: absolute;
+        bottom: -160px;
+        left: -75px;
+        z-index: 4;
+        animation-name: boost;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes boost{
+        from{
+            bottom: -100px;
+        left: -80px;
+        transform: scale(0.5);
+        transition: 1s ease-in;
+        }
+        to{
+            bottom: -50px;
+        left: 40px;
+        transform: scale(1);
+        transition: 1s ease-in;
+        }
+    }
+
     .banner{
         align-items:center;
     }
@@ -608,7 +918,84 @@ a{
     .banner{
         align-items:center;
     }
+    .svg1{
+        width: 150px;
+        position: absolute;
+        bottom: 200px;
+        left: 200px;
+        z-index: 5;
+        animation-name: rocket;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
     
+    @keyframes rocket{
+        from{
+            bottom: 10px;
+        left: 10px;
+        }
+        to{
+            bottom: 100px;
+        left: 160px;
+        }
+    }
+    
+    .svg5{
+        width: 150px;
+        position: absolute;
+        bottom: -160px;
+        left: -75px;
+        z-index: 4;
+        animation-name: boost;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes boost{
+        from{
+            bottom: -100px;
+        left: -80px;
+        transform: scale(0.6);
+        transition: 1s ease-in;
+        }
+        to{
+            bottom: 0px;
+        left: 70px;
+        transform: scale(1);
+        transition: 1s ease-in;
+        }
+    }
+    
+    .svg6{
+        width: 400px;
+        position: absolute;
+        bottom: -122px;
+        left: -122px;
+        z-index: 3;
+        animation-name: cloud4;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes cloud4{
+        from{
+            bottom: -122px;
+        left: -122px;
+        }
+        to{
+            bottom: -150px;
+        left: -150px;
+        }
+    }
+    .bannerbg{
+        position: absolute;
+        width: 350px;
+        top: 100px;
+        z-index: -1;
+    }
     .banner-content{
         width: 90%;
         height: 100%;
@@ -637,6 +1024,124 @@ a{
     }
 }
 
+@media screen and (max-width:360px){
+    .section-1{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+    }
+    .banner{
+        align-items:center;
+    }
+    .svg1{
+        width: 150px;
+        position: absolute;
+        bottom: 200px;
+        left: 200px;
+        z-index: 5;
+        animation-name: rocket;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes rocket{
+        from{
+            bottom: 10px;
+        left: 10px;
+        }
+        to{
+            bottom: 100px;
+        left: 160px;
+        }
+    }
+    
+    .svg5{
+        width: 150px;
+        position: absolute;
+        bottom: -160px;
+        left: -75px;
+        z-index: 4;
+        animation-name: boost;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes boost{
+        from{
+            bottom: -100px;
+        left: -80px;
+        transform: scale(0.6);
+        transition: 1s ease-in;
+        }
+        to{
+            bottom: 0px;
+        left: 70px;
+        transform: scale(1);
+        transition: 1s ease-in;
+        }
+    }
+    
+    .svg6{
+        width: 350px;
+        position: absolute;
+        bottom: -122px;
+        left: -122px;
+        z-index: 3;
+        animation-name: cloud4;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+    }
+    
+    @keyframes cloud4{
+        from{
+            bottom: -122px;
+        left: -122px;
+        }
+        to{
+            bottom: -150px;
+        left: -150px;
+        }
+    }
+    .bannerbg{
+        position: absolute;
+        width: 350px;
+        top: 100px;
+        z-index: -1;
+    }
+    .banner-content{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-content h5{
+        font-size: 18px;
+    }
+    
+    .banner-content .txt-type {
+        font-size:9px;
+        height: 20px;
+    }
+    
+    .banner-content p{
+        width: 80%;
+        font-size:15px;
+    }
+    .know-more{
+        margin-top: 0px;
+    }
+}
+
 /** SECTION-2 **/
 
 .section-2{
@@ -653,24 +1158,28 @@ a{
 }
 
 .section-2 .head{
-    margin-top:120px;
-    width: 60%;
-    font-size: 30px;
+    margin-top:100px;
+    width: 70%;
+    font-size: 20px;
     text-align: center;
     color: #3330a3;
     font-family: 'Montserrat', sans-serif;
 }
 
 .section-2 .context{
-    width:100%;
+    width:70%;
     display: flex;
     flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
 }
 
-.section-2 .context-img{
+.section-2 .context img{
+    width: 400px;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    margin-right: 100px;
 }
 
 .section-2 .context .context-items{
@@ -680,10 +1189,10 @@ a{
 
 .section-2 .context .context-items h3{
     font-size: 30px;
-    color: #3330a3;
+    color: #6f6bd6;
     font-weight: 100;
     font-family: 'Montserrat', sans-serif;
-    margin: 30px;
+    margin: 15px 0;
 }
 
 .section-2 .context .context-items h1{
@@ -691,7 +1200,7 @@ a{
     color: #3330a3;
     font-weight: 100;
     font-family: 'Montserrat', sans-serif;
-    margin: 30px 0;
+    margin: 25px 0;
 }
 
 .section-2 .context .context-items h1 a{
@@ -704,39 +1213,63 @@ a{
 
 .section-2 .context .context-items .context-main{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction:column;
 }
 
 .section-2 .context .context-items .context-main .context-main-items{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 600px;
+    height: 140px;
+    padding: 15px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-box-shadow: 13px 9px 13px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 9px 13px -13px rgba(0,0,0,0.75);
+    box-shadow: 15px 10px 15px -15px rgba(0,0,0,0.75);
+    margin: 10px 0;
+    background-color: #fff;
+}
+
+.section-2 .context .context-items .context-main .context-main-items:nth-child(1)
+{
+    border-left: 5px solid #ff9f9f;
+}
+.section-2 .context .context-items .context-main .context-main-items:nth-child(2)
+{
+    border-left: 5px solid #80BAED;
+}
+.section-2 .context .context-items .context-main .context-main-items:nth-child(3)
+{
+    border-left: 5px solid #21ebc8;
+}
+.section-2 .context .context-items .context-main .context-main-items:nth-child(4)
+{
+    border-left: 5px solid #164377;
+}
+
+.section-2 .context .context-items .context-main .context-main-items h2 span{
+    font-size: 25px;
+    color: #e17600;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 10px;
 }
 
 .section-2 .context .context-items .context-main .context-main-items h2{
-    font-size: 30px;
-    color: #e17600;
+    font-size:30px;
+    color: #5956cd;
     font-family: 'Montserrat', sans-serif;
+    margin: 10px;
 }
 
-.section-2 .context .context-items .context-main .context-main-items h1{
-    font-size: 30px;
-    color: #3330a3;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
 .section-2 .context .context-items .context-main .context-main-items p{
-    font-size: 18px;
+    font-size: 16px;
     color: #000;
-    margin: 15px;
     font-family: 'Montserrat', sans-serif;
 }
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:1200px){
     .section-2{
         width: 100%;
     }
@@ -751,16 +1284,19 @@ a{
         display: flex;
         flex-direction: column;
         margin-top: 30px;
+        justify-content: center;
+        align-items: center;
     }
     
-    .section-2 .context-img img{
-        width: 400px;
+    .section-2 .context img{
+        width: 300px;
+        margin: 0;
     }
 
     .section-2 .context .context-items{
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: center;;
     }
     
     .section-2 .context .context-items h3{
@@ -772,7 +1308,7 @@ a{
     }
     
     .section-2 .context .context-items h1{
-        font-size: 16px;
+        font-size: 20px;
         color: #3330a3;
         font-weight: 100;
         font-family: 'Montserrat', sans-serif;
@@ -790,25 +1326,23 @@ a{
     
     .section-2 .context .context-items .context-main{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
     }
     
     .section-2 .context .context-items .context-main .context-main-items{
         display: flex;
         flex-direction: column;
-        width: 150px;
     }
     
-    .section-2 .context .context-items .context-main .context-main-items h2{
-        font-size: 20px;
+    .section-2 .context .context-items .context-main .context-main-items h2 span{
+        font-size: 18px;
         color: #e17600;
         font-family: 'Montserrat', sans-serif;
     }
     
-    .section-2 .context .context-items .context-main .context-main-items h1{
-        font-size: 16px;
+    .section-2 .context .context-items .context-main .context-main-items h2{
+        font-size: 20px;
         color: #3330a3;
         font-family: 'Montserrat', sans-serif;
         display: flex;
@@ -816,27 +1350,15 @@ a{
         align-items: center;
     }
     
-    .section-2 .context .context-items .context-main .context-main-items h1 div{
-        width: 30px;
-        height: 2px;
-        background-color: #3330a3;
-        margin: 0 10px;
-    }
-    
     .section-2 .context .context-items .context-main .context-main-items p{
-        font-size: 14px;
+        font-size: 16px;
         color: #000;
         margin: 15px;
-        text-align: center;
         font-family: 'Montserrat', sans-serif;
     }
 }
 
-@media screen and (max-width:680px){
-    .section-2{
-        width: 100%;
-        height: 150%;
-    }
+@media screen and (max-width:600px){
     .section-2 .head{
         width: 90%;
         font-size: 16px;
@@ -847,11 +1369,12 @@ a{
         width:90%;
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 0px;
     }
     
-    .section-2 .context-img img{
-        width: 200px;
+    .section-2 .context img{
+        width: 150px;
+        margin-top: 10px;
     }
 
     .section-2 .context .context-items{
@@ -862,10 +1385,10 @@ a{
     
     .section-2 .context .context-items h3{
         font-size: 30px;
-        color: #3330a3;
+        color: #ff9f9f;
         font-weight: 100;
         font-family: 'Montserrat', sans-serif;
-        margin: 30px;
+        margin-top: 10px;
     }
     
     .section-2 .context .context-items h1{
@@ -887,37 +1410,20 @@ a{
     
     .section-2 .context .context-items .context-main{
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
     }
     
     .section-2 .context .context-items .context-main .context-main-items{
         display: flex;
         flex-direction: column;
-        width: 150px;
-    }
-    
-    .section-2 .context .context-items .context-main .context-main-items h2{
-        font-size: 20px;
-        color: #e17600;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    .section-2 .context .context-items .context-main .context-main-items h1{
-        font-size: 16px;
-        color: #3330a3;
-        font-family: 'Montserrat', sans-serif;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        width:100%;
     }
     
     .section-2 .context .context-items .context-main .context-main-items p{
-        font-size: 14px;
+        font-size: 13px;
         color: #000;
         margin: 15px;
-        text-align: center;
         font-family: 'Montserrat', sans-serif;
     }
 }
@@ -932,7 +1438,7 @@ a{
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    background: linear-gradient(to right, rgb(255, 255, 255), rgb(193, 210, 255));
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(193, 210, 255));
 }
 .section-3 .section-3-context{
     width: 60%;
