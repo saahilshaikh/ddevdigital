@@ -28,6 +28,19 @@ fb.addEventListener("mouseover",socialPop);
 tw.addEventListener("click",socialPop);
 tw.addEventListener("mouseover",socialPop);
 
+document.querySelector(".container").addEventListener("scroll",ProgressPos);
+
+function ProgressPos(){
+  var pos=document.querySelector(".container").scrollTop;
+  var limit=document.querySelector(".container").scrollHeight-document.querySelector(".container").clientHeight;
+  var progress=Math.round((pos/limit)*100);
+  if(progress>10){
+    document.querySelector(".progress-bar").style.width=progress+"%";
+  }
+  else{
+    document.querySelector(".progress-bar").style.width="0%";
+  }
+}
 
 function openFullMenu(){
     hamburger.classList.toggle("open");
