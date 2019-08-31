@@ -131,6 +131,18 @@ class TypeWriter {
     }
   }
   
+  /** HOW WE WORK **/
+  $('.section-6-items').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 3,
+    arrows:false,
+    dots:true,
+    swipeToSlide:true,
+    variableWidth:true,
+    autoplay: true,
+  autoplaySpeed: 2000,
+  });
   
   // Init On DOM Load
   document.addEventListener('DOMContentLoaded', init);
