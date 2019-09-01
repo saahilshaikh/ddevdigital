@@ -156,7 +156,6 @@ class TypeWriter {
     new TypeWriter(txtElement, words, wait);
   }
 
-
   /** CONTACT-FORM **/
 
   function validateFormOnSubmit(contact) {
