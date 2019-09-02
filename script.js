@@ -1,3 +1,8 @@
+/** loader **/
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut("slow");
+});
+
 /** NAVIGATION **/
 
 var hamburger=document.querySelector(".hamburger");
@@ -131,19 +136,48 @@ class TypeWriter {
     }
   }
   
-  /** HOW WE WORK **/
-  $('.section-6-items').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 3,
-    arrows:false,
-    dots:true,
-    swipeToSlide:true,
-    variableWidth:true,
-    autoplay: true,
-  autoplaySpeed: 2000,
-  });
-  
+  /**WHY **/
+  var header = document.querySelector(".slider-main");
+  var btns = header.getElementsByClassName("slider-main-items");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click",currentClick);
+}
+  function currentClick(){
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  }
+
+  document.querySelector(".slide-item-1").addEventListener("click",change1);
+  function change1(){
+    document.querySelector(".slider-sub h1").innerHTML="Cost Effective Web Development";
+    document.querySelector(".slider-sub h2").innerHTML="With the best web design company in India like Intlum, forget about any hassle with your web development programs. We have developers with expertise in various technologies like WordPress, Magento, Custom PHP and much more at the most affordable price.";
+  }
+  document.querySelector(".slide-item-2").addEventListener("click",change2);
+  function change2(){
+    document.querySelector(".slider-sub h1").innerHTML="Talented Team";
+    document.querySelector(".slider-sub h2").innerHTML="Our team of talented individuals come from different fields and possess different expertise in terms of UI-UX design, coding, web analysis, app development, project management, and conversion optimization.";
+  }
+  document.querySelector(".slide-item-3").addEventListener("click",change3);
+  function change3(){
+    document.querySelector(".slider-sub h1").innerHTML="Free Consultation And Guidance";
+    document.querySelector(".slider-sub h2").innerHTML="No matter what query you have in your mind, we are there with all the solutions. Our free website consultation and guidance will take your website and business to the height you have always aimed at.";
+  }
+  document.querySelector(".slide-item-4").addEventListener("click",change4);
+  function change4(){
+    document.querySelector(".slider-sub h1").innerHTML="SEO Friendly Websites";
+    document.querySelector(".slider-sub h2").innerHTML="Being the leading digital marketing agency in Kolkata, we understand Google algorithms better than anyone else. If you want to have a website that dominates the search engine results, we are here to build the most SEO friendly website that drives traffic.";
+  }
+  document.querySelector(".slide-item-5").addEventListener("click",change5);
+  function change5(){
+    document.querySelector(".slider-sub h1").innerHTML="Custom Development";
+    document.querySelector(".slider-sub h2").innerHTML="We respect your creativity and that’s why our custom development will always help you convert your unique ideas into a dynamic website. From the website redesign to custom development, we serve all.";
+  }
+  document.querySelector(".slide-item-6").addEventListener("click",change6);
+  function change6(){
+    document.querySelector(".slider-sub h1").innerHTML="UI-UX That Converts";
+    document.querySelector(".slider-sub h2").innerHTML="We craft website designs that pay a lot of attention to the user experience and conversion. The perfectly crafted User Interface and User Experience are something that help keeping the audience engaged and love any particular website.";
+  }
   // Init On DOM Load
   document.addEventListener('DOMContentLoaded', init);
   
