@@ -161,6 +161,7 @@ a{
     font-size: 16px;
     margin: 5px 16px;
     color: #3330a3;
+    font-weight: 500;
     position: relative;
     cursor: pointer;
 }
@@ -1239,7 +1240,7 @@ a{
 }
 
 .section-2 .head{
-    margin-top:100px;
+    margin-top:50px;
     width: 70%;
     font-size: 20px;
     text-align: center;
@@ -1267,7 +1268,7 @@ a{
 }
 
 .section-2 .context .context-items h3{
-    font-size: 30px;
+    font-size: 50px;
     color: #e17600;
     font-weight: 100;
     font-family: 'Montserrat', sans-serif;
@@ -2029,12 +2030,12 @@ a{
     font-size: 25px;
     color: #e17600;
     font-family: 'Montserrat', sans-serif;
-    margin:50px 0;
+    margin:50px 25px;
 }
 
 .section-5 .section-5-context .section-5-left h1{
     font-size: 50px;
-    color: #8886db;
+    color: #ff9f9f;
     font-family: 'Montserrat', sans-serif;
     margin-bottom:20px; 
 }
@@ -2879,7 +2880,7 @@ a{
     background: #8E2DE2;  /* fallback for old browsers */background: -webkit-linear-gradient(to right, #3330a3, #8E2DE2);
     background: linear-gradient(to right, #3330a3, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     overflow: hidden;
-    margin: 200px 0;
+    margin: 100px 0;
 }
 
 .section-8 h1{
@@ -3209,7 +3210,6 @@ a{
 @media screen  and (max-width:768px){ 
     .section-8 h2{
         font-size: 25px;
-        color: #e17600;
         font-family: 'Montserrat', sans-serif;
         margin: 20px;
         position: relative;
@@ -3221,7 +3221,6 @@ a{
         bottom: -10px;
         height: 5px;
         width: 200px;
-        background-color: #e17600;
         border-radius: 10px;
     }
     
@@ -3559,7 +3558,7 @@ a{
 }
 
 .section-11-container .follow-us h1{
-    color: #0069a3;
+    color: #3330a3;
 }
 
 .section-11-container .follow-us a{
@@ -3567,8 +3566,20 @@ a{
     cursor: pointer;
 }
 .section-11-container .follow-us a:hover{
-    transform:scale(2);
-    transition: transform 350ms ease-out;
+    transform:scale(2) translateY(-10px);
+    transition: transform 400ms ease-out;
+}
+.link{
+    color: #0077b5;
+}
+.insta{
+    color: #d82667;
+}
+.face{
+    color: #3b5998;
+}
+.twit{
+    color: #00acee;
 }
 .section-11-container .follow-us a i{
     font-size: 40px;

@@ -19,19 +19,7 @@ var audio2=new Audio('getintouch.wav');
 
 hamburger.addEventListener("click",openFullMenu);
 
-getInTouch.addEventListener("click",getIntouch);
-getInTouch.addEventListener("mouseover",getIntouchMO);
-
 document.querySelector(".full-menu-context-main ul").addEventListener("click",closeMenu);
-
-ln.addEventListener("click",socialPop);
-ln.addEventListener("mouseover",socialPop);
-ig.addEventListener("click",socialPop);
-ig.addEventListener("mouseover",socialPop);
-fb.addEventListener("click",socialPop);
-fb.addEventListener("mouseover",socialPop);
-tw.addEventListener("click",socialPop);
-tw.addEventListener("mouseover",socialPop);
 
 document.querySelector(".container").addEventListener("scroll",ProgressPos);
 
@@ -63,19 +51,6 @@ function closeMenu(){
   document.querySelector(".main-menu").classList.toggle("disable-main-menu");
   document.querySelector(".company-logo").classList.toggle("disable-company-logo");
   audio1.play();
-}
-
-function getIntouch(){
-    audio1.play();
-    closeMenu();
-}
-
-function getIntouchMO(){
-  audio2.play();
-}
-
-function socialPop(){
-    audio1.play();
 }
 
 
