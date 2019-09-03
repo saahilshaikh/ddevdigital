@@ -80,7 +80,7 @@ function socialPop(){
 
 
 
-/** BANNER **/
+/** SECTION-1 **/
 
 class TypeWriter {
     constructor(txtElement, words, wait) {
@@ -135,8 +135,75 @@ class TypeWriter {
       setTimeout(() => this.type(), typeSpeed);
     }
   }
-  
-  /**WHY **/
+/** SECTION-3 **/
+
+/** SECTION-4 **/
+var sec4t1 = new TimelineMax();
+var sec4t2 = new TimelineMax();
+var sec4t3 = new TimelineMax();
+var sec4t4 = new TimelineMax();
+var sec4t5 = new TimelineMax();
+var controller4 = new ScrollMagic.Controller();
+
+
+sec4t1.to('#block-1', 1, {transform:"translateY(-150px)"});
+sec4t2.to('#block-2', 1, {transform:"translateY(-150px)"});
+sec4t3.to('#block-3', 1, {transform:"translateY(-150px)"});
+sec4t4.to('#block-4', 1, {transform:"translateY(-150px)"});
+sec4t5.to('#block-5', 1, {transform:"translateY(-150px)"});
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: ".section-4",
+  triggerHook:"onCenter",
+  duration:"100%"
+})
+  .setTween(sec4t1)
+  .addTo(controller4);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: ".section-4",
+  triggerHook:"onCenter",
+  duration:"100%"
+})
+  .setTween(sec4t2)
+  .addTo(controller4);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: ".section-4",
+  triggerHook:"onCenter",
+  duration:"100%"
+})
+.setTween(sec4t3)
+.addTo(controller4);
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: ".section-4",
+  triggerHook:"onCenter",
+  duration:"100%"
+})
+  .setTween(sec4t4)
+  .addTo(controller4);
+var scene = new ScrollMagic.Scene({
+  triggerElement: ".section-4",
+  triggerHook:"onCenter",
+  duration:"100%"
+})
+  .setTween(sec4t5)
+  .addTo(controller4);
+/** SECTION-5 **/
+var sec5t1 = new TimelineMax();
+var controller5 = new ScrollMagic.Controller();
+sec5t1.from('#section-5-context-main',1, {transform:"translateY(100px)"});
+
+var scene = new ScrollMagic.Scene({
+  triggerElement: ".section-5",
+  triggerHook:"onLeave",
+  duration:"100%"
+})
+  .setTween(sec5t1)
+  .addTo(controller5);
+
+/** SECTION-6 **/
   var header = document.querySelector(".slider-main");
   var btns = header.getElementsByClassName("slider-main-items");
 for (var i = 0; i < btns.length; i++) {
