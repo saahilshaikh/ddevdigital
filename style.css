@@ -2882,7 +2882,7 @@ a{
     margin: 200px 0;
 }
 
-.section-8 h2{
+.section-8 h1{
     font-size: 30px;
     color: #e17600;
     font-family: 'Montserrat', sans-serif;
@@ -2890,17 +2890,15 @@ a{
     margin-left: 50px;
     position: relative;
 }
-
-.section-8 h2::before{
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    height: 5px;
-    width: 400px;
-    background-color: #e17600;
-    border-radius: 10px;
+.section-8 h2{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    margin-left: 50px;
+    position: relative;
 }
-
 .section-8 h3{
     font-size: 20px;
     color: #fff;
@@ -3520,30 +3518,32 @@ a{
 /** section-10 **/
 
 .section-11{
+    margin-top: 200px;
     width: 100%;
-    height: 80vh;
+    height: 82vh;
     background-color: #13123f;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .section-11-container{
     width: 70%;
-    height: 100%;
-    position: relative;
+    height: 90%;
     background-image:url(Artboard\ 1.svg);
     background-repeat: no-repeat;
-    background-size:80%;
+    background-size:100%;
     background-position: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .section-11-container .follow-us
 {
-    width: 70%;
+    width: 50%;
     height: 140px;
     background-color: #fff;
     -webkit-box-shadow: -1px 7px 16px 3px rgba(0,0,0,0.75);
@@ -3559,7 +3559,7 @@ a{
 }
 
 .section-11-container .follow-us h1{
-    color: #4f97b2;
+    color: #0069a3;
 }
 
 .section-11-container .follow-us a{
@@ -3568,8 +3568,233 @@ a{
 }
 .section-11-container .follow-us a:hover{
     transform:scale(2);
-    transition: transform 200ms ease-out;
+    transition: transform 350ms ease-out;
 }
 .section-11-container .follow-us a i{
+    font-size: 40px;
+}
+
+.section-11-main{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+.section-11-resorces,.section-11-services{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.section-11-resorces h1,.section-11-services h1{
+    font-size: 25px;
+    color: #fff;
+    font-weight:500;
+}
+.section-11-resorces a,.section-11-services a{
+    font-size: 18px;
+    color: #0069a3;
+}
+.section-11-comapny{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.section-11-comapny h1{
     font-size: 30px;
+    color: #fff;
+}
+.section-11-comapny a{
+    font-size: 15px;
+    color: #fff;
+    margin: 5px 0;
+}
+.section-11-comapny a i{
+    font-size: 20px;
+    margin:0 10px;
+    color: #0069a3;
+}
+
+.section-11-end{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.section-11-end h1{
+    font-size: 20px;
+    color: #0069a3;
+}
+.section-11-end h1 i{
+    font-size: 20px;
+    margin:0 5px;
+    color: #68c71e;
+}
+.section-11-end p{
+    margin: 0 10px;
+    font-size: 15px;
+    color: #0069a3;
+}
+
+@media screen and (max-width:1024px){
+    
+.section-11{
+    width: 100%;
+    height: 60vh;
+}
+
+.section-11-container{
+    width: 90%;
+    height: 90%;
+}
+
+.section-11-container .follow-us
+{
+    width: 80%;
+    height: 100px;
+}
+.section-11-resorces h1,.section-11-services h1{
+    font-size: 20px;
+}
+.section-11-resorces a,.section-11-services a{
+    font-size: 18px;
+}
+.section-11-comapny h1{
+    font-size: 20px;
+}
+.section-11-comapny a{
+    font-size: 10px;
+}
+.section-11-comapny a i{
+    font-size: 15px;
+}
+}
+
+@media screen and (max-width:680px){
+
+    .section-11{
+        margin-top: 200px;
+        width: 100%;
+        height: 120vh;
+        background-color: #13123f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .section-11-container{
+        width: 100%;
+        height: 90%;
+        background-image:url(Artboard\ 1.svg);
+        background-repeat: no-repeat;
+        background-size:100%;
+        background-position: bottom;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .section-11-container .follow-us
+    {
+        width: 90%;
+        height: 120px;
+    }
+    
+    .section-11-container .follow-us h1{
+        color: #0069a3;
+        font-size: 20px;
+    }
+    
+    .section-11-container .follow-us a{
+        color: #3330a3;
+        cursor: pointer;
+    }
+    .section-11-container .follow-us a:hover{
+        transform:scale(2);
+        transition: transform 350ms ease-out;
+    }
+    .section-11-container .follow-us a i{
+        font-size: 20px;
+    }
+    .section-11-main{
+        width: 90%;
+        height:60%;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .section-11-resorces,.section-11-services{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin: 10px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .section-11-resorces h1,.section-11-services h1{
+        font-size: 20px;
+        color: #fff;
+        font-weight:500;
+    }
+    .section-11-resorces a,.section-11-services a{
+        font-size: 16px;
+        color: #0069a3;
+    }
+    .section-11-comapny{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .section-11-comapny h1{
+        font-size: 20px;
+        color: #fff;
+    }
+    .section-11-comapny a{
+        font-size: 14px;
+        color: #fff;
+        margin: 5px 0;
+    }
+    .section-11-comapny a i{
+        font-size: 14px;
+        margin:0 10px;
+        color: #0069a3;
+    }
+    
+    .section-11-end{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .section-11-end h1{
+        font-size: 15px;
+        color: #0069a3;
+    }
+    .section-11-end h1 i{
+        font-size: 15px;
+        margin:0 5px;
+        color: #68c71e;
+    }
+    .section-11-end p{
+        margin: 0 10px;
+        font-size: 12px;
+        color: #0069a3;
+    }
 }
