@@ -331,3 +331,5 @@ function validateMessage(message) {
     }
     return error;
 }
+
+/** SECTION-10 */

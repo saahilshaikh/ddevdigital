@@ -122,6 +122,7 @@ a{
     overflow-y:scroll;
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
+    cursor: default;
 }
 
 /** NAGIATION **/
@@ -140,12 +141,27 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
-
+.navigation .company-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.navigation .company-logo h1{
+    font-size: 25px;
+    color: #3330a3;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+}
+.navigation .company-logo h1 a{
+    font-size: 14px;
+}
 .navigation .company-logo img{
-    width: 50px;
-    height: 40px;
-    margin-top: 15px;
+    width: 70px;
+    height:70px;
 }
 
 .navigation-menus{
@@ -161,7 +177,7 @@ a{
     font-size: 16px;
     margin: 5px 16px;
     color: #3330a3;
-    font-weight: 500;
+    font-weight: 600;
     position: relative;
     cursor: pointer;
 }
@@ -409,8 +425,24 @@ a{
     top: 0;
     transition: ease-out 0.2s;
 }
-
-@media screen and (max-width:768px){
+@media screen and (max-width:1150px)
+{
+    .navigation{
+        width: 95%;
+    }
+    
+}
+@media screen and (max-width:850px){
+.navigation .company-logo h1{
+    font-size: 20px;
+}
+.navigation .company-logo h1 a{
+    font-size: 12px;
+}
+.navigation .company-logo img{
+    width: 50px;
+    height:50px;
+}
     .navigation .navigation-menus ul{
         display: none;
     }
@@ -3207,73 +3239,27 @@ a{
     opacity: 0.4;
 }
 
-@media screen  and (max-width:768px){ 
+@media screen  and (max-width:1024px){ 
     .section-8 h2{
         font-size: 25px;
-        font-family: 'Montserrat', sans-serif;
         margin: 20px;
         position: relative;
-    }
-    
-    .section-8 h2::before{
-        content: "";
-        position: absolute;
-        bottom: -10px;
-        height: 5px;
-        width: 200px;
-        border-radius: 10px;
-    }
-    
+    }   
     .section-8 h3{
         font-size: 18px;
-        color: #fff;
-        font-family: 'Montserrat', sans-serif;
         margin: 20px;
         width: 100%;
         font-weight: 100;
     }
-    
-    .section-8 .container-1{
-        position: absolute;
-        right: 200px;
-        top: 60px;
-        width: 360px;
-        height: 640px;
-        margin-top:150px;
-        transform: rotate(30deg) skew(-25deg) scale(0.6);
-        transition: 0.5s;
-        z-index: 1;
-    }
-    
-    .section-8 .container-2{
-        display: none;
-    }
-    
-    .section-8 .container-3{
-        position: absolute;
-        right: 500px;
-        top: 150px;
-        width: 320px;
-        height: 180px;
-        margin-top:150px;
-        transform: rotate(30deg) skew(-25deg) scale(0.6);
-        transition: 0.5s;
-        z-index: 0;
-    }
-
-    .section-8 .container-5{
-        display: none;
-    }
-    
-    .section-8 .container-7{
-        display: none;
-    }
-
-    .section-8 .container-8{
-        display: none;
+    .section-8-container{
+        transform: scale(0.8) translateX(200px);
     }
 }
-
+@media screen  and (max-width:680px){ 
+    .section-8-container{
+        transform: scale(0.5) translate(300px,100px);
+    }
+}
 /** section-9 **/
 
 .section-9{
@@ -3474,9 +3460,9 @@ a{
 @media screen and (max-width:680px){
     .section-9{
         width: 100%;
-        height: 120vh;
+        height: 150vh;
         background-color: #fff;
-        margin-top: 100px;
+        margin-top: 200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -3516,7 +3502,7 @@ a{
 
 /** section-10 **/
 
-.section-11{
+.section-10{
     margin-top: 200px;
     width: 100%;
     height: 82vh;
@@ -3527,7 +3513,7 @@ a{
     position: relative;
 }
 
-.section-11-container{
+.section-10-container{
     width: 70%;
     height: 90%;
     background-image:url(Artboard\ 1.svg);
@@ -3540,7 +3526,7 @@ a{
     align-items: center;
 }
 
-.section-11-container .follow-us
+.section-10-container .follow-us
 {
     width: 50%;
     height: 140px;
@@ -3557,15 +3543,15 @@ a{
     top: -10%;
 }
 
-.section-11-container .follow-us h1{
+.section-10-container .follow-us h1{
     color: #3330a3;
 }
 
-.section-11-container .follow-us a{
+.section-10-container .follow-us a{
     color: #3330a3;
     cursor: pointer;
 }
-.section-11-container .follow-us a:hover{
+.section-10-container .follow-us a:hover{
     transform:scale(2) translateY(-10px);
     transition: transform 400ms ease-out;
 }
@@ -3581,11 +3567,11 @@ a{
 .twit{
     color: #00acee;
 }
-.section-11-container .follow-us a i{
+.section-10-container .follow-us a i{
     font-size: 40px;
 }
 
-.section-11-main{
+.section-10-main{
     width: 90%;
     height: 100%;
     display: flex;
@@ -3593,7 +3579,7 @@ a{
     justify-content: space-evenly;
     align-items: flex-end;
 }
-.section-11-resorces,.section-11-services{
+.section-10-resorces,.section-10-services{
     display: flex;
     width: 100%;
     height: 40%;
@@ -3601,16 +3587,16 @@ a{
     justify-content: center;
     align-items: flex-start;
 }
-.section-11-resorces h1,.section-11-services h1{
+.section-10-resorces h1,.section-10-services h1{
     font-size: 25px;
     color: #fff;
     font-weight:500;
 }
-.section-11-resorces a,.section-11-services a{
+.section-10-resorces a,.section-10-services a{
     font-size: 18px;
     color: #0069a3;
 }
-.section-11-comapny{
+.section-10-comapny{
     display: flex;
     width: 100%;
     height: 40%;
@@ -3618,38 +3604,41 @@ a{
     justify-content: center;
     align-items: flex-start;
 }
-.section-11-comapny h1{
+.section-10-comapny h1{
     font-size: 30px;
     color: #fff;
 }
-.section-11-comapny a{
+.section-10-comapny h1 img{
+    width: 40px;
+}
+.section-10-comapny a{
     font-size: 15px;
     color: #fff;
     margin: 5px 0;
 }
-.section-11-comapny a i{
+.section-10-comapny a i{
     font-size: 20px;
     margin:0 10px;
     color: #0069a3;
 }
 
-.section-11-end{
+.section-10-end{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
-.section-11-end h1{
+.section-10-end h1{
     font-size: 20px;
     color: #0069a3;
 }
-.section-11-end h1 i{
+.section-10-end h1 i{
     font-size: 20px;
     margin:0 5px;
     color: #68c71e;
 }
-.section-11-end p{
+.section-10-end p{
     margin: 0 10px;
     font-size: 15px;
     color: #0069a3;
@@ -3657,41 +3646,41 @@ a{
 
 @media screen and (max-width:1024px){
     
-.section-11{
+.section-10{
     width: 100%;
     height: 60vh;
 }
 
-.section-11-container{
+.section-10-container{
     width: 90%;
     height: 90%;
 }
 
-.section-11-container .follow-us
+.section-10-container .follow-us
 {
     width: 80%;
     height: 100px;
 }
-.section-11-resorces h1,.section-11-services h1{
+.section-10-resorces h1,.section-10-services h1{
     font-size: 20px;
 }
-.section-11-resorces a,.section-11-services a{
+.section-10-resorces a,.section-10-services a{
     font-size: 18px;
 }
-.section-11-comapny h1{
+.section-10-comapny h1{
     font-size: 20px;
 }
-.section-11-comapny a{
+.section-10-comapny a{
     font-size: 10px;
 }
-.section-11-comapny a i{
+.section-10-comapny a i{
     font-size: 15px;
 }
 }
 
 @media screen and (max-width:680px){
 
-    .section-11{
+    .section-10{
         margin-top: 200px;
         width: 100%;
         height: 120vh;
@@ -3702,7 +3691,7 @@ a{
         position: relative;
     }
     
-    .section-11-container{
+    .section-10-container{
         width: 100%;
         height: 90%;
         background-image:url(Artboard\ 1.svg);
@@ -3715,29 +3704,30 @@ a{
         align-items: center;
     }
     
-    .section-11-container .follow-us
+    .section-10-container .follow-us
     {
         width: 90%;
-        height: 120px;
+        height: 100px;
+        top: -50px;
     }
     
-    .section-11-container .follow-us h1{
+    .section-10-container .follow-us h1{
         color: #0069a3;
         font-size: 20px;
     }
     
-    .section-11-container .follow-us a{
+    .section-10-container .follow-us a{
         color: #3330a3;
         cursor: pointer;
     }
-    .section-11-container .follow-us a:hover{
+    .section-10-container .follow-us a:hover{
         transform:scale(2);
         transition: transform 350ms ease-out;
     }
-    .section-11-container .follow-us a i{
+    .section-10-container .follow-us a i{
         font-size: 20px;
     }
-    .section-11-main{
+    .section-10-main{
         width: 90%;
         height:60%;
         margin: 20px 0;
@@ -3746,7 +3736,7 @@ a{
         justify-content: flex-start;
         align-items: flex-start;
     }
-    .section-11-resorces,.section-11-services{
+    .section-10-resorces,.section-10-services{
         display: flex;
         width: 100%;
         height: 100%;
@@ -3755,16 +3745,16 @@ a{
         justify-content: center;
         align-items: flex-start;
     }
-    .section-11-resorces h1,.section-11-services h1{
+    .section-10-resorces h1,.section-10-services h1{
         font-size: 20px;
         color: #fff;
         font-weight:500;
     }
-    .section-11-resorces a,.section-11-services a{
+    .section-10-resorces a,.section-10-services a{
         font-size: 16px;
         color: #0069a3;
     }
-    .section-11-comapny{
+    .section-10-comapny{
         display: flex;
         width: 100%;
         height: 100%;
@@ -3772,38 +3762,38 @@ a{
         justify-content: center;
         align-items: flex-start;
     }
-    .section-11-comapny h1{
+    .section-10-comapny h1{
         font-size: 20px;
         color: #fff;
     }
-    .section-11-comapny a{
+    .section-10-comapny a{
         font-size: 14px;
         color: #fff;
         margin: 5px 0;
     }
-    .section-11-comapny a i{
+    .section-10-comapny a i{
         font-size: 14px;
         margin:0 10px;
         color: #0069a3;
     }
     
-    .section-11-end{
+    .section-10-end{
         width: 90%;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
     }
-    .section-11-end h1{
+    .section-10-end h1{
         font-size: 15px;
         color: #0069a3;
     }
-    .section-11-end h1 i{
+    .section-10-end h1 i{
         font-size: 15px;
         margin:0 5px;
         color: #68c71e;
     }
-    .section-11-end p{
+    .section-10-end p{
         margin: 0 10px;
         font-size: 12px;
         color: #0069a3;
